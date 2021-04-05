@@ -15,6 +15,10 @@ header li {
 }
 header p {
   display: inline-block;
+  color: white;
+}
+.under {
+  color: white;
 }
 .heroImg {
   background-color: #EBEBEB;
@@ -24,7 +28,7 @@ header p {
   max-width: 300px;
   margin: 0 auto;
   padding: 50px;
-  background-color: #FFFFFF;
+  background-color: #000000;
   text-align: center;
 }
 button {
@@ -40,10 +44,87 @@ footer {
   color: white;
 }
 footer ul {
+  margin: auto;
   list-style: none;
   padding-left: 5px;
 }
 footer li {
+  margin: auto;
   display: inline-block;
   padding: 0px 7px;
+}
+.flexContainer {
+  margin: auto;
+  display: flex;
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  flex-direction: row;
+  outline-style: auto;
+  outline-width: 2px;
+  outline-color: rgb(25, 0, 255);
+}
+.mySkills {
+  display: grid;
+  outline-style: auto;
+  outline-width: 2px;
+  outline-color: red;
+}
+.workGrid {
+  margin: auto;
+  display: grid;
+  
+  grid-template-areas: 'myArea myArea myArea myArea' ;
+}
+.project {
+  text-align: center;
+  margin: auto;
+  grid-area: myArea;
+  background-color: rgb(255, 255, 255);
+  outline-style: auto;
+  outline-width: 2px;
+  outline-color: rgb(255, 0, 242);
+}
+@media only screen and (max-width: 600){
+  #categoryGrid {
+    grid-auto-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "myWork"
+    "myWork"
+    "myWork";
+  }
+
+}
+.skill {
+  text-align: center;
+  margin: auto;
+  outline: 5px black ;
+  margin: 50px;
+  width: 33%;
+  outline-style: auto;
+  outline-width: 2px;
+  outline-color: rgb(247, 0, 255);
+}
+.myWork {
+  display: grid;
+  grid-template-columns: 1fr;
+  outline-style: auto;
+  outline-width: 2px;
+  outline-color: red;
+  text-align: center;
+}
+.work {
+  outline-style: auto;
+  outline-width: 2px;
+  outline-color: rgb(4, 0, 255);
+}
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "myWork" "myWork" "myWork"
+  ;
 }
